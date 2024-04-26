@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    /* background-color: #f4f4f4; */
+}
+
+.calculatorWrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+
+    /* background-color: blanchedalmond; */
+}
+
+.navbarWrapper{
+    display: flex;
+    justify-content: center;
+    background-color: #B3E6FF;
+    padding: 10px;
+}
+
+.navbar{
+    width: 90%;
+}
+
+#inputField{
+    padding: 20px 15px;
+    text-align: right;
+    font-weight: bold;
+    
+
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+}
+
+.calculatorBox{
+    box-shadow: rgba(135, 135, 135, 0.2) 0px 2px 6px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.keyboard{
+    width: 100%;
+    /* background-color: bisque; */
+    border-radius: 10px;
+}
+
+.KeyboardLine{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+/* --------------------------------------- */
+
+.allClearBtn{
+    width: 47%;
+}
+
+.percentageBtn{
+    width: 20%;
+}
+
+.divideBtn{
+    width: 20%;
+}
+
+/* --------------------------------------- */
+
+.sevenBtn, .eightBtn, .nineBtn, .multiplyBtn{
+    width: 20%;
+}
+
+/* --------------------------------------- */
+
+.fourBtn, .fiveBtn, .sixBtn, .minusBtn{
+    width: 20%;
+}
+
+/* --------------------------------------- */
+
+
+.oneBtn, .twoBtn, .threeBtn, .plusBtn{
+    width: 20%;
+}
+
+/* --------------------------------------- */
+
+.zeroBtn, .pointBtn, .deleteBtn, .resultBtn{
+    width: 20%;
+}
+
+/* --------------------------------------- */
+
+.defaultBtn{
+    padding: 8px 0;
+    border: 0;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.defaultBtn:hover{
+    cursor: pointer;
+
+    background-color: #B3E6FF;
+    box-shadow: #B3E6FF 0px 2px 7px;
+}
+
+.defaultBtn:active{
+    background-color: rgb(214, 214, 214);
+    box-shadow: rgb(214, 214, 214) 0px 2px 7px;
+
+}
+
+.defaultBtn, .calculatorBox, #inputField{
+    box-shadow: rgba(102, 102, 102, 0.2) 0px 2px 7px;
+}
+
+.plusBtn, .minusBtn, .multiplyBtn, .divideBtn, .percentageBtn{
+    background-color: #FFF78D;
+    box-shadow: rgba(102, 102, 102, 0.2) 0px 2px 7px;
+}
+
+.plusBtn:hover, .minusBtn:hover, .multiplyBtn:hover, .divideBtn:hover, .percentageBtn:hover{
+    background-color: #fff240;
+    box-shadow: rgba(102, 102, 102, 0.2) 0px 2px 7px;
+}
+
+.allClearBtn{
+    background-color: #FFD9D9;
+}
+
+.allClearBtn:hover{
+    background-color: #ffaaaa;
+}
+
+.resultBtn{
+    background-color: #17DDB9;
+}
+
+.resultBtn:hover{
+    background-color: #00d1ab;
+}
+
+.deleteBtn:hover{
+    background-color: #ffaaaa;
+}

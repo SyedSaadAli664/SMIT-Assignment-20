@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="navbarWrapper">
+        <div class="navbar">
+            <h1>My Calculator</h1>
+        </div>
+    </div>
+
+    <!-- Calculator Wrapper -->
+    <div class="calculatorWrapper">
+
+        <!-- Main Calculator -->
+        <div class="calculatorBox">
+
+            <!-- Input Area -->
+            <div class="inputArea">
+                <input type="type" name="" disabled id="inputField">
+            </div>
+
+
+            <!-- Keyboard -->
+            <div class="keyboard">
+
+                <div class="KeyboardLine">
+                    <button class="defaultBtn allClearBtn" onclick="allclear()">Clear</button>
+                    <button class="defaultBtn percentageBtn"  onclick="inputData('%')">%</button>
+                    <button class="defaultBtn divideBtn" onclick="inputData('/')">/</button>
+                </div>
+
+                <div class="KeyboardLine">
+                    <button class="defaultBtn sevenBtn" onclick="inputData(7)">7</button>
+                    <button class="defaultBtn eightBtn" onclick="inputData(8)">8</button>
+                    <button class="defaultBtn nineBtn" onclick="inputData(9)">9</button>
+                    <button class="defaultBtn multiplyBtn" onclick="inputData('*')">*</button>
+                </div>
+
+                <div class="KeyboardLine">
+                    <button class="defaultBtn fourBtn"  onclick="inputData(4)">4</button>
+                    <button class="defaultBtn fiveBtn"  onclick="inputData(5)">5</button>
+                    <button class="defaultBtn sixBtn"  onclick="inputData(6)">6</button>
+                    <button class="defaultBtn minusBtn"  onclick="inputData('-')">-</button>
+                </div>
+
+                <div class="KeyboardLine">
+                    <button class="defaultBtn oneBtn" onclick="inputData(1)">1</button>
+                    <button class="defaultBtn twoBtn" onclick="inputData(2)">2</button>
+                    <button class="defaultBtn threeBtn" onclick="inputData(3)">3</button>
+                    <button class="defaultBtn plusBtn" onclick="inputData('+')">+</button>
+                </div>
+
+                <div class="KeyboardLine">
+                    <button class="defaultBtn zeroBtn" onclick="inputData(0)">0</button>
+                    <button class="defaultBtn pointBtn" onclick="inputData('.')">.</button>
+                    <button class="defaultBtn deleteBtn" onclick="deleteOne()"><i class="fa-solid fa-delete-left"></i></button>
+                    <button class="defaultBtn resultBtn" onclick="result()">=</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------------- -->
+
+</body>
+
+<script src="app.js"></script>
+
+</html>
